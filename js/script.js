@@ -1,6 +1,9 @@
 // Wait for the DOM to be fully loaded before running scripts
 document.addEventListener('DOMContentLoaded', function() {
     
+    // SOLUCIÓN: Forzar el scroll a la parte superior de la página al cargar.
+    window.scrollTo(0, 0);
+
     // Feather Icons Initialization
     // This function finds all elements with a `data-feather` attribute and replaces them with SVG icons.
     if (typeof feather !== 'undefined') {
